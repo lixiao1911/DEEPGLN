@@ -1,3 +1,6 @@
+"""created by L.X
+    some code is imported from https://github.com/jymsuper/SpeakerRecognition_tutorial/
+"""
 import torch
 import torch.nn.functional as F
 from torch.autograd import Variable
@@ -137,10 +140,6 @@ def main():
     # Load enroll embeddings
     embeddings = load_enroll_embeddings(embedding_dir)
     
-    """ Test speaker list
-    '103F3021', '207F2088', '213F5100', '217F3038', '225M4062', 
-    '229M2031', '230M4087', '233F4013', '236M3043', '240M3063'
-    """ 
     dirct = 'feat_logfbank_nfilt40_voxceleb1/test'
     spk_list=os.listdir(dirct) 
     print(spk_list)
@@ -150,7 +149,6 @@ def main():
     '''
     # ACC calculating
     # Set the test speaker
-    # test_speaker = '225M4062'
     '''
     num = 0
     for test_speaker in spk_list:
