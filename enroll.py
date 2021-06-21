@@ -1,6 +1,3 @@
-"""created by L.X
-    some code is imported from https://github.com/jymsuper/SpeakerRecognition_tutorial/
-"""
 import torch
 import torch.nn.functional as F
 from torch.autograd import Variable

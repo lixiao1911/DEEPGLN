@@ -1,3 +1,5 @@
+"""imported from https://github.com/jymsuper/SpeakerRecognition_tutorial/
+"""
 import torch
 import torch.utils.data as data
 import torchvision.transforms as transforms
